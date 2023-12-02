@@ -4,6 +4,7 @@ import ListOfContacts from './ListOfContacts/ListOfContacts';
 import { nanoid } from 'nanoid';
 import Filter from './Filter/Filter';
 
+// App class
 export class App extends Component {
   state = {
     contacts: [],
