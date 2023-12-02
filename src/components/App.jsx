@@ -67,13 +67,13 @@ export class App extends Component {
     const { filter } = this.state;
     const visibleContacts = this.filterContacts();
     return (
-      <div className="container">
-        <h1>Phonebook</h1>
-        <AddContactForm createUser={this.createUser} />
-        <h2>Contacts</h2>
-        <Filter value={filter} onChange={this.changeFilter} />
-        {ListOfContacts(visibleContacts, this.deleteContact)}
-      </div>
+        <div className="container">
+          <h1>Phonebook</h1>
+          <AddContactForm createUser={this.createUser} />
+          <h2>Contacts</h2>
+          <Filter value={filter} onChange={this.changeFilter} />
+          {ListOfContacts(visibleContacts, this.deleteContact)}
+        </div>
     );
   }
 }

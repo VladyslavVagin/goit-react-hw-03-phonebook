@@ -1,7 +1,6 @@
 
 .contactForm {
-    min-width: 352px;
-    max-width: 50%;
+    width: 90%;
     padding: 16px;
     display: flex;
     flex-direction: column;
