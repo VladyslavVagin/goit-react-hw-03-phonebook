@@ -34,7 +34,9 @@ export class App extends Component {
   componentDidMount() {
     const dataFromLocalStorage = localStorage.getItem('users');
     const parsedDataUsers = JSON.parse(dataFromLocalStorage);
-    this.setState({ contacts: parsedDataUsers });
+    if (parsedDataUsers) {
+      this.setState({ contacts: parsedDataUsers });
+    }
   }
   //======================== If state change we renew this data to localStorage
   componentDidUpdate() {
