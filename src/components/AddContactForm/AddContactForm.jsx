@@ -22,7 +22,7 @@ const AddContactForm = ({createUser}) => {
 
     return (
       <Formik initialValues={initialValues} validationSchema={schema} onSubmit={handleSubmit}>
-        <Form className={css.contactForm} autoComplete='off'>
+        <Form className={css.contactForm} autoComplete='true'>
           <label className={css.label} htmlFor='name'>
             <Field
               type="text"

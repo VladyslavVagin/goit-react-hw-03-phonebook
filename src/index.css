@@ -13,7 +13,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-h1,h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
 }
@@ -21,8 +24,38 @@ h1,h2, h3, p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  margin: 6% auto 0 auto;
   padding: 20px 0;
   max-width: 400px;
   width: 100%;
+  border: 1px solid black;
+  padding-right: 22px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-color: rgb(230, 230, 230);
+}
+
+h1 {
+  animation: titleanime 1000ms infinite;
+}
+
+@keyframes titleanime {
+  0% {
+    color: blue;
+  }
+  25% {
+    color: chartreuse;
+  }
+
+  50% {
+    color: blueviolet;
+  }
+  75% {
+    color: black;
+  }
+
+  100% {
+    color: brown;
+  }
 }
